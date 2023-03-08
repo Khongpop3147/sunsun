@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-//#include <conio.h>
+#include <conio.h>
 #include <curses.h>
 #include <stdio.h>
 using namespace std;
@@ -856,7 +856,7 @@ int main() {
         }
 		
 		
-		scores_table();
+		
 		return 0;
 	}
 	else {
