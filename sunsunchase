@@ -30,448 +30,345 @@ void hints()
 	cout << "                                                                                     ***********************************" << endl;
 }
 
-void quiz1()
+void quiz1() {
+cout << " " << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " " << endl;
+cout << " " << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 1"<< endl;
+cout << "What is the name of bully Gian's sister?" << endl;
+cout << "[1] Hannah"<<endl;
+cout << "[2] Giani" << endl;
+cout << "[3] Jaiko" << endl;
+cout << "[4] Artisia" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+//limiting the answers of the user
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
 {
-    cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "      *****" << endl;
-	cout << "                                                                                     ***********************************" << endl; 
-	cout << "\t\t\t\t\t Q U E S T I O N No. 1" << endl;
-    cout << "Who does Iguro Obanai secretly like?" << endl;
-    cout << "[1] Kamado Tanjiro" << endl;
-    cout << "[2] Kanroji Mitsuri2" << endl;
-    cout << "[3] Kojo Shinobu" << endl;
-    cout << "[4] Tomioka Giyu" << endl;
-		string answer;
-		cout << endl;
-    	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		//limiting the answers of the user
-		if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-		{
-			if (answer == "3")
-			{
-				total_score += 10;
-				correct_answer += 1;
-				cout << "C O R R E C T   A N S W E R !!!" << endl;
-				cout << "You got 10 points out of 10." << endl;
-			}
-			else if (answer == "1" || answer == "2" || answer == "4")
-			{
-				cout << "W R O N G  A N S W E R !!!" << endl;
-				cout << "You got 0 points out of 10." << endl;
-			}
-			cout << endl;
-			system("pause");//คำสั่งที่จะหยุดการทำงานไว้จนกว่าผู้ใช้จะกดปุ่มบนแป้นพิมพ์
-			system("cls");
-		}
-		else //ถ้าไม่ได้ตอบ 1 2 3 4 โปรแกรมจะให้ตอบให้ถูกอีกครั้ง
-		{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-            quiz1();
-			
-		}
+if (answer == "3")
+{
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "4")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else
+{
+system("cls");
+cout << "\t\t**********" << endl;
+cout << "\t\t**** P L E A S E I N P U T C O R R E C T V A L U E ! " << endl;
+cout << "\t\t*********************************************************************************" << endl;
+cout << endl;
+quiz1();
+}
 }
 void quiz2() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 2" << endl;
-	cout << "What is the only function all C++ programs must contain?" << endl;
-	cout << "[1] start()" << endl;
-	cout << "[2] system()" << endl;
-	cout << "[3] program()" << endl;
-	cout << "[4] main()" << endl;
-	string answer;
-	cout<<endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "4")
-		{
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-		}
-	else
-	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz2();
-	}
-	
+cout << " " << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " " << endl;
+cout << " " << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 2" << endl;
+cout << "Who is the only main female character in the show whom Nobita likes very much?" << endl;
+cout << "[1] Ran" << endl;
+cout << "[2] Christine Goda" << endl;
+cout << "[3] Miyoko" << endl;
+cout << "[4] Shizuka Minamoto" << endl;
+string answer;
+cout<<endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "4")
+{
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "3")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else
+{
+system("cls");
+cout << "\t\t**********" << endl;
+cout << "\t\t**** P L E A S E I N P U T C O R R E C T V A L U E ! " << endl;
+cout << "\t\t*********************************************************************************" << endl;
+cout << endl;
+quiz2();
+}
+
 }
 void quiz3() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 3" << endl;
-	cout << "Which of the following is a correct comment?" << endl;
-	cout << "[1] / Comment /" << endl;
-	cout << "[2] ** Comment **" << endl;
-	cout << "[3] { Comment }" << endl;
-	cout << "[4]  //comment" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "4") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else
-	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz3();
-	}
+cout << " " << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " " << endl;
+cout << " " << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 3" << endl;
+cout << "What is the color of Dorami, Doraemon's sister?" << endl;
+cout << "[1] Pink" << endl;
+cout << "[2] Orange" << endl;
+cout << "[3] Purple" << endl;
+cout << "[4] Yellow" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "4") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "3")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else
+{
+system("cls");
+cout << "\t\t**********" << endl;
+cout << "\t\t**** P L E A S E I N P U T C O R R E C T V A L U E ! " << endl;
+cout << "\t\t*********************************************************************************" << endl;
+cout << endl;
+quiz3();
+}
 }
 void quiz4() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 4" << endl; 
-	cout << "Which of the following is the correct operator to compare two variables?" << endl;
-	cout << "[1] = =" << endl;
-	cout << "[2] :=" << endl;
-	cout << "[3] =" << endl;
-	cout << "[4] ==" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "4") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else
-	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz4();
-	}
+cout << " " << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " " << endl;
+cout << " " << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 4" << endl;
+cout << "What is Gian's passion?" << endl;
+cout << "[1] Dancing" << endl;
+cout << "[2] Karate" << endl;
+cout << "[3] Sumo Wrestling" << endl;
+cout << "[4] Singing" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "4") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "3")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else
+{
+system("cls");
+cout << "\t\t**********" << endl;
+cout << "\t\t**** P L E A S E I N P U T C O R R E C T V A L U E ! " << endl;
+cout << "\t\t*********************************************************************************" << endl;
+cout << endl;
+quiz4();
+}
 }
 void quiz5() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 4" << endl; 
-	cout << "Which of the following is the correct operator to compare two variables?" << endl;
-	cout << "[1] = =" << endl;
-	cout << "[2] :=" << endl;
-	cout << "[3] =" << endl;
-	cout << "[4] ==" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "4") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else
-	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz5();
-	}
+cout << " " << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " " << endl;
+cout << " " << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 5" << endl;
+cout << "Who is Gian's sidekick?" << endl;
+cout << "[1] Dekisugi;" << endl;
+cout << "[2] Suneo" << endl;
+cout << "[3] Jaiko" << endl;
+cout << "[4] Nobita" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "2") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "3" || answer == "4")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else
+{
+system("cls");
+cout << "\t\t**********" << endl;
+cout << "\t\t**** P L E A S E I N P U T C O R R E C T V A L U E ! " << endl;
+cout << "\t\t*********************************************************************************" << endl;
+cout << endl;
+quiz5();
+}
+
 }
 void quiz6() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 4" << endl; 
-	cout << "Which of the following is the correct operator to compare two variables?" << endl;
-	cout << "[1] = =" << endl;
-	cout << "[2] :=" << endl;
-	cout << "[3] =" << endl;
-	cout << "[4] ==" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+cout << " ***********************************" << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " *****" << endl;
+cout << " ***********************************" << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 6" << endl;
+cout << "Whom or what is Doraemon scared of?" << endl;
+cout << "[1] Nobita" << endl;
+cout << "[2] Rats" << endl;
+cout << "[3] Suneo" << endl;
+cout << "[4] Cats" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "2")
+{
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+
+	}
+	else if (answer == "1" || answer == "3" || answer == "4")
 	{
-		if (answer == "4") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 10." << endl;
+		
+	}
+		cout << endl;
+		system("pause");
+		system("cls");
 	}
 	else
 	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz6();
+		system("cls");
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << endl;
+		quiz6();
 	}
 }
 void quiz7() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 4" << endl; 
-	cout << "Which of the following is the correct operator to compare two variables?" << endl;
-	cout << "[1] = =" << endl;
-	cout << "[2] :=" << endl;
-	cout << "[3] =" << endl;
-	cout << "[4] ==" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "4") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-		}
-		else if (answer == "1" || answer == "2" || answer == "3")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
+cout << " ***********************************" << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " *****" << endl;
+cout << " ***********************************" << endl;
+cout << "\t\t\t\t\t Q U E S T I O N No. 7" << endl;
+cout << "What is Doraemon?" << endl;
+cout << "[1] an adventure storybook series!" << endl;
+cout << "[2] an adventure-fiction cartoon series!" << endl;
+cout << "[3] both!" << endl;
+cout << "[4] neither!" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "4") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "3" || answer == "2")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+
 	}
+		cout << endl;
+		system("pause");
+		system("cls");
+}
 	else
 	{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz7();
+		system("cls");
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << endl;
+		quiz7();
 	}
 }
 void quiz8() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	hints();
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 9" << endl;
-	cout << "What is the result of the program below?" << endl;
-	cout << " int x = 10; " << endl;
-	cout << " int y = 70; " << endl;
-	cout << " x = x + y; " << endl;
-	cout << " y = x - y;  " << endl;
-	cout << " x = x - y;  " << endl;
-	cout << endl;
-	cout << "[1] x=70, y=10" << endl;
-	cout << "[2] x=10, y=70" << endl;
-	cout << "[3] x=60, y=20" << endl;
-	cout << "[4] x=20, y=60" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "1") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-			
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-			
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else if (answer == "A" || answer == "a")
-	{
-		hints_used++;
-		cout << endl;
-		cout << "Audience prediction is...  " << endl;
-		cout << "[1] 30%" << endl;
-		cout << "[2] 25%" << endl;
-		cout << "[3] 20%" << endl;
-		cout << "[4] 25%" << endl;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		if (answer == "1") {
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
+cout << " ***********************************" << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " *****" << endl;
+cout << " ***********************************" << endl;
+hints();
+cout << "\t\t\t\t\t Q U E S T I O N No. 8" << endl;
+cout << "Does Doraemon have any siblings?" << endl;
+cout << "[1] True" << endl;
+cout << "[2] False" << endl;
+cout << "[3] Unevaluatable" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+//limiting the answers of the user
+if (answer == "1" || answer == "2" || answer == "3" )
+{
+if (answer == "1") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
 
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
 	}
-	else if (answer == "B" || answer == "b")
+	else if (answer == "2" || answer == "3")
 	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer1, answer2;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
-		cin >> answer1;
-		cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
-		cin >> answer2;
-		if (answer1 == "1" || answer2 == "1")
-		{
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
-		}
-		else
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 10." << endl;
 		
 	}
-	else if (answer == "C" || answer == "c")
-	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		total_score += 5;
-		correct_answer += 1;
-		if (answer == "1")
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-		cout << "You got 5 points out of 5." << endl;
 		cout << endl;
 		system("pause");
 		system("cls");
-		
-	}
-	else if (answer == "D" || answer == "d") {
+}
+//if cases for the hints
+else if (answer == "A" || answer == "a")
+{
 	hints_used++;
-	system("cls");
-	cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  5  P O I N T S. " << endl;
 	cout << endl;
-	cout << "When did INHA UNivercity in TAshkent established?." << endl;
-	cout << "[1] 2014" << endl;
-	cout << "[2] 1968" << endl;
-	cout << "[3] 2015" << endl;
-	string answer;
+	cout << "Audience prediction is...  " << endl;
+	cout << "[1] 42%" << endl;
+	cout << "[2] 38%" << endl;
+	cout << "[3] 20%" << endl;
 	cout << endl;
 	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
 	cin >> answer;
@@ -479,7 +376,7 @@ void quiz8() {
 		total_score += 5;
 		correct_answer += 1;
 		cout << "C O R R E C T   A N S W E R !!!" << endl;
-		cout << "You got 5 points out of 5." << endl;
+		cout << "You got 10 points out of 5." << endl;
 
 	}
 	else if (answer == "2" || answer == "3")
@@ -488,169 +385,152 @@ void quiz8() {
 		cout << "You got 0 points out of 5." << endl;
 
 	}
-		cout << endl;
-		system("pause");
-		system("cls");
+
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "B" || answer == "b")
+{
+	hints_used++;
+	system("cls");
+	cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 8" << endl;
+	cout << "Does Doraemon have any siblings?" << endl;
+	cout << "[1] True" << endl;
+	cout << "[2] False" << endl;
+	cout << "[3] Unevaluatable" << endl;
+	string answer1, answer2;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
+	cin >> answer1;
+	cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
+	cin >> answer2;
+	if (answer1 == "1" || answer2 == "1")
+	{
+		total_score += 5;
+		correct_answer += 1;
+		cout << "C O R R E C T   A N S W E R !!!" << endl;
+		cout << "You got 5 points out of 5." << endl; 
 	}
-	else
-		{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz8();
+	else 
+	{
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 5." << endl;
+	}
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "C" || answer == "c")
+{
+	hints_used++;
+	system("cls");
+	cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 8" << endl;
+	cout << "Does Doraemon have any siblings?" << endl;
+	cout << "[1] True" << endl;
+	cout << "[2] False" << endl;
+	cout << "[3] Unevaluatable" << endl;
+	string answer;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+	cin >> answer;
+    total_score += 5;
+    correct_answer += 1;
+	if(answer=="1")
+    cout << "C O R R E C T   A N S W E R !!!" << endl;
+    cout << "You got 5 points out of 5." << endl;
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "D" || answer == "d") 
+{
+     hints_used++;
+	system("cls");
+	cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  5  P O I N T S. " << endl;
+	cout << endl;
+	cout << "Who does Shizuka have a serious crush on?" << endl;
+	cout << "[1] Nobody" << endl;
+	cout << "[2] Nobita" << endl;
+	cout << "[3] Dekisugi" << endl;
+	string answer;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+	cin >> answer;
+		if (answer == "1") {
+			total_score += 5;
+			correct_answer += 1;
+			cout << "C O R R E C T   A N S W E R !!!" << endl;
+			cout << "You got 5 points out of 5." << endl;
+
 		}
+		else if (answer == "2" || answer == "3")
+		{
+			cout << "W R O N G  A N S W E R !!!" << endl;
+			cout << "You got 0 points out of 5." << endl;
+
+		}
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+
+else
+	{
+		system("cls");
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << endl;
+		quiz8();
+	}
 }
 void quiz9() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	hints();
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 9" << endl;
-	cout << "What is the result of the program below?" << endl;
-	cout << " int x = 10; " << endl;
-	cout << " int y = 70; " << endl;
-	cout << " x = x + y; " << endl;
-	cout << " y = x - y;  " << endl;
-	cout << " x = x - y;  " << endl;
-	cout << endl;
-	cout << "[1] x=70, y=10" << endl;
-	cout << "[2] x=10, y=70" << endl;
-	cout << "[3] x=60, y=20" << endl;
-	cout << "[4] x=20, y=60" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "1") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-			
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-			
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else if (answer == "A" || answer == "a")
-	{
-		hints_used++;
-		cout << endl;
-		cout << "Audience prediction is...  " << endl;
-		cout << "[1] 30%" << endl;
-		cout << "[2] 25%" << endl;
-		cout << "[3] 20%" << endl;
-		cout << "[4] 25%" << endl;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		if (answer == "1") {
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
+cout << " ***********************************" << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " *****" << endl;
+cout << " ***********************************" << endl;
+hints();
+cout << "\t\t\t\t\t Q U E S T I O N No. 9" << endl;
+cout << "Gian always picks on Nobita. Who helps him(unwillingly) to do this?" << endl;
+cout << endl;
+cout << "[1] Suneo" << endl;
+cout << "[2] Dekisugi" << endl;
+cout << "[3] Doraemon" << endl;
+cout << "[4] Nobisuke" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "1") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
 
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
 	}
-	else if (answer == "B" || answer == "b")
+	else if (answer == "2" || answer == "3" || answer == "4")
 	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer1, answer2;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
-		cin >> answer1;
-		cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
-		cin >> answer2;
-		if (answer1 == "1" || answer2 == "1")
-		{
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
-		}
-		else
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 10." << endl;
 		
 	}
-	else if (answer == "C" || answer == "c")
-	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		total_score += 5;
-		correct_answer += 1;
-		if (answer == "1")
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-		cout << "You got 5 points out of 5." << endl;
 		cout << endl;
 		system("pause");
 		system("cls");
-		
-	}
-	else if (answer == "D" || answer == "d") {
+}
+else if (answer == "A" || answer == "a")
+{
 	hints_used++;
-	system("cls");
-	cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  5  P O I N T S. " << endl;
 	cout << endl;
-	cout << "When did INHA UNivercity in TAshkent established?." << endl;
-	cout << "[1] 2014" << endl;
-	cout << "[2] 1968" << endl;
-	cout << "[3] 2015" << endl;
-	string answer;
+	cout << "Audience prediction is...  " << endl;
+	cout << "[1] 30%" << endl;
+	cout << "[2] 25%" << endl;
+	cout << "[3] 20%" << endl;
+	cout << "[4] 25%" << endl;
 	cout << endl;
 	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
 	cin >> answer;
@@ -661,205 +541,273 @@ void quiz9() {
 		cout << "You got 5 points out of 5." << endl;
 
 	}
-	else if (answer == "2" || answer == "3")
+	else if (answer == "2" || answer == "3" || answer == "4")
 	{
 		cout << "W R O N G  A N S W E R !!!" << endl;
 		cout << "You got 0 points out of 5." << endl;
-
 	}
-		cout << endl;
-		system("pause");
-		system("cls");
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "B" || answer == "b")
+{
+	hints_used++;
+	system("cls");
+	cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
+	cout << "Gian always picks on Nobita. Who helps him(unwillingly) to do this?" << endl;
+	cout << endl;
+	cout << "[1] Suneo" << endl;
+    cout << "[2] Dekisugi" << endl;
+    cout << "[3] Doraemon" << endl;
+    cout << "[4] Nobisuke" << endl;
+	string answer1, answer2;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
+	cin >> answer1;
+	cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
+	cin >> answer2;
+	if (answer1 == "1" || answer2 == "1")
+	{
+		total_score += 5;
+		correct_answer += 1;
+		cout << "C O R R E C T   A N S W E R !!!" << endl;
+		cout << "You got 5 points out of 5." << endl;
 	}
 	else
-		{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz9();
-		}
+	{
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 5." << endl;
+	}
+	cout << endl;
+	system("pause");
+	system("cls");
+	
+}
+else if (answer == "C" || answer == "c")
+{
+	hints_used++;
+	system("cls");
+	cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
+    cout << "Gian always picks on Nobita. Who helps him(unwillingly) to do this?" << endl;
+    cout << endl;
+    cout << "[1] Suneo" << endl;
+    cout << "[2] Dekisugi" << endl;
+    cout << "[3] Doraemon" << endl;
+    cout << "[4] Nobisuke" << endl;
+	string answer;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+	cin >> answer;
+	total_score += 5;
+	correct_answer += 1;
+	if (answer == "1")
+		cout << "C O R R E C T   A N S W E R !!!" << endl;
+	cout << "You got 5 points out of 5." << endl;
+	cout << endl;
+	system("pause");
+	system("cls");
+	
+}
+else if (answer == "D" || answer == "d") {
+hints_used++;
+system("cls");
+cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  5  P O I N T S. " << endl;
+cout << endl;
+cout << "Doraemon is afraid of mice. Why?" << endl;
+cout << "[1] He had his ears bitten off by a mouse" << endl;
+cout << "[2] He's not afraid of mice" << endl;
+cout << "[3] Because he's an elephant" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1") {
+	total_score += 5;
+	correct_answer += 1;
+	cout << "C O R R E C T   A N S W E R !!!" << endl;
+	cout << "You got 5 points out of 5." << endl;
+
+}
+else if (answer == "2" || answer == "3")
+{
+	cout << "W R O N G  A N S W E R !!!" << endl;
+	cout << "You got 0 points out of 5." << endl;
+
+}
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else
+	{
+		system("cls");
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
+		cout << "\t\t*************************************************************************************" << endl;
+		cout << endl;
+		quiz9();
+	}
 }
 void quiz10() {
-	cout << "                                                                                     ***********************************" << endl;
-	cout << "                                                                                     *****      TOTAL SCORE:" << total_score << "     *****" << endl;
-	cout << "                                                                                     ***********************************" << endl;
-	hints();
-	cout << "\t\t\t\t\t  Q U E S T I O N  No. 9" << endl;
-	cout << "What is the result of the program below?" << endl;
-	cout << " int x = 10; " << endl;
-	cout << " int y = 70; " << endl;
-	cout << " x = x + y; " << endl;
-	cout << " y = x - y;  " << endl;
-	cout << " x = x - y;  " << endl;
-	cout << endl;
-	cout << "[1] x=70, y=10" << endl;
-	cout << "[2] x=10, y=70" << endl;
-	cout << "[3] x=60, y=20" << endl;
-	cout << "[4] x=20, y=60" << endl;
-	string answer;
-	cout << endl;
-	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-	cin >> answer;
-	if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
-	{
-		if (answer == "1") {
-			total_score += 10;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 10 points out of 10." << endl;
-			
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 10." << endl;
-			
-		}
-			cout << endl;
-			system("pause");
-			system("cls");
-	}
-	else if (answer == "A" || answer == "a")
-	{
-		hints_used++;
-		cout << endl;
-		cout << "Audience prediction is...  " << endl;
-		cout << "[1] 30%" << endl;
-		cout << "[2] 25%" << endl;
-		cout << "[3] 20%" << endl;
-		cout << "[4] 25%" << endl;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		if (answer == "1") {
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
+cout << " ***********************************" << endl;
+cout << " ***** TOTAL SCORE:" << total_score << " *****" << endl;
+cout << " ***********************************" << endl;
+hints();
+cout << "\t\t\t\t\t Q U E S T I O N No. 10" << endl;
+cout << "Which is the first Doraemon film?" << endl;
+cout << "[1] Nobita's Little Space War" << endl;
+cout << "[2] The Record of Nobita's Spaceblazer" << endl;
+cout << "[3] Nobita's Dinosaur" << endl;
+cout << "[4] Nobita's Great Adventure in the South Seas" << endl;
+string answer;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "1" || answer == "2" || answer == "3" || answer == "4")
+{
+if (answer == "3") {
+total_score += 10;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 10 points out of 10." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "4")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 10." << endl;
+}
+cout << endl;
+system("pause");
+system("cls");
+}
+else if (answer == "A" || answer == "a")
+{
+hints_used++;
+cout << endl;
+cout << "Audience prediction is... " << endl;
+cout << "[1] 30%" << endl;
+cout << "[2] 25%" << endl;
+cout << "[3] 20%" << endl;
+cout << "[4] 25%" << endl;
+cout << endl;
+cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+cin >> answer;
+if (answer == "3") {
+total_score += 5;
+correct_answer += 1;
+cout << "C O R R E C T A N S W E R !!!" << endl;
+cout << "You got 5 points out of 5." << endl;
+}
+else if (answer == "1" || answer == "2" || answer == "4")
+{
+cout << "W R O N G A N S W E R !!!" << endl;
+cout << "You got 0 points out of 5." << endl;
 
-		}
-		else if (answer == "2" || answer == "3" || answer == "4")
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
 	}
-	else if (answer == "B" || answer == "b")
-	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer1, answer2;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
-		cin >> answer1;
-		cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
-		cin >> answer2;
-		if (answer1 == "1" || answer2 == "1")
-		{
-			total_score += 5;
-			correct_answer += 1;
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-			cout << "You got 5 points out of 5." << endl;
-		}
-		else
-		{
-			cout << "W R O N G  A N S W E R !!!" << endl;
-			cout << "You got 0 points out of 5." << endl;
-		}
-		cout << endl;
-		system("pause");
-		system("cls");
-		
-	}
-	else if (answer == "C" || answer == "c")
-	{
-		hints_used++;
-		system("cls");
-		cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
-		cout << "\t\t\t\t\tQ U E S T I O N  No. 9" << endl;
-		cout << "What is the result of the program below?" << endl;
-		cout << " int x = 10; " << endl;
-		cout << " int y = 70; " << endl;
-		cout << " x = x + y; " << endl;
-		cout << " y = x - y;  " << endl;
-		cout << " x = x - y;  " << endl;
-		cout << endl;
-		cout << "[1] x=70, y=10" << endl;
-		cout << "[2] x=10, y=70" << endl;
-		cout << "[3] x=60, y=20" << endl;
-		cout << "[4] x=20, y=60" << endl;
-		string answer;
-		cout << endl;
-		cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
-		cin >> answer;
-		total_score += 5;
-		correct_answer += 1;
-		if (answer == "1")
-			cout << "C O R R E C T   A N S W E R !!!" << endl;
-		cout << "You got 5 points out of 5." << endl;
-		cout << endl;
-		system("pause");
-		system("cls");
-		
-	}
-	else if (answer == "D" || answer == "d") {
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "B" || answer == "b")
+{
 	hints_used++;
 	system("cls");
-	cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  5  P O I N T S. " << endl;
+	cout << "Now you have chance to choose two answers. If one of them will correct you will take 5 points." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 10" << endl;
+	cout << "Which is the first Doraemon film?" << endl;
+    cout << "[1] Nobita's Little Space War" << endl;
+    cout << "[2] The Record of Nobita's Spaceblazer" << endl;
+    cout << "[3] Nobita's Dinosaur" << endl;
+    cout << "[4] Nobita's Great Adventure in the South Seas" << endl;
+	string answer1, answer2;
 	cout << endl;
-	cout << "When did INHA UNivercity in TAshkent established?." << endl;
-	cout << "[1] 2014" << endl;
-	cout << "[2] 1968" << endl;
-	cout << "[3] 2015" << endl;
+	cout << "\t\t\t\t\tENTER YOUR FIRST CHOICE: ";
+	cin >> answer1;
+	cout << "\t\t\t\t\tENTER YOUR SECOND CHOICE: ";
+	cin >> answer2;
+	if (answer1 == "3" || answer2 == "3")
+	{
+		total_score += 5;
+		correct_answer += 1;
+		cout << "C O R R E C T   A N S W E R !!!" << endl;
+		cout << "You got 5 points out of 5." << endl;
+	}
+	else
+	{
+		cout << "W R O N G  A N S W E R !!!" << endl;
+		cout << "You got 0 points out of 5." << endl;
+	}
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else if (answer == "C" || answer == "c")
+{
+	hints_used++;
+	system("cls");
+	cout << "Now you have chance to answer incorrectly. You will take 5 points for this question." << endl;
+	cout << "\t\t\t\t\tQ U E S T I O N  No. 10" << endl;
+	cout << "Which is the first Doraemon film?" << endl;
+    cout << "[1] Nobita's Little Space War" << endl;
+    cout << "[2] The Record of Nobita's Spaceblazer" << endl;
+    cout << "[3] Nobita's Dinosaur" << endl;
+    cout << "[4] Nobita's Great Adventure in the South Seas" << endl;
 	string answer;
 	cout << endl;
 	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
 	cin >> answer;
-	if (answer == "1") {
+	total_score += 5;
+	correct_answer += 1;
+	if (answer == "3")
+		cout << "C O R R E C T   A N S W E R !!!" << endl;
+	cout << "You got 5 points out of 5." << endl;
+	cout << endl;
+	system("pause");
+	system("cls");
+
+}
+else if (answer == "D" || answer == "d") {
+hints_used++;
+	system("cls");
+	cout << "\t T H I S   I S  A  N E W   Q U E S T I O N. Y O U  W I L L  G E T  '5'  P O I N T S. " << endl;
+	cout << endl;
+	cout << "Last question. What name did Nobita give the puppy he found in one episode/book?" << endl;
+	cout << "[1] Hachi" << endl;
+	cout << "[2] Ichi" << endl;
+	cout << "[3] Papi" << endl;
+	string answer;
+	cout << endl;
+	cout << "\t\t\t\t\tENTER YOUR CHOICE: ";
+	cin >> answer;
+	if (answer == "2") {
 		total_score += 5;
 		correct_answer += 1;
 		cout << "C O R R E C T   A N S W E R !!!" << endl;
 		cout << "You got 5 points out of 5." << endl;
 
 	}
-	else if (answer == "2" || answer == "3")
+	else if (answer == "1" || answer == "3")
 	{
 		cout << "W R O N G  A N S W E R !!!" << endl;
 		cout << "You got 0 points out of 5." << endl;
 
 	}
-		cout << endl;
-		system("pause");
-		system("cls");
-	}
-	else
-		{
-			system("cls");
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
-			cout << "\t\t*************************************************************************************" << endl;
-			cout << endl;
-			quiz10();
-		}
-		 scores.push_back(total_score);
+	cout << endl;
+	system("pause");
+	system("cls");
+}
+else
+{
+	system("cls");
+	cout << "\t\t*************************************************************************************" << endl;
+	cout << "\t\t****           P L E A S E  I N P U T  C O R R E C T  V A L U E !                ****" << endl;
+	cout << "\t\t*************************************************************************************" << endl;
+	cout << endl;
+	quiz10();
+}
 }
 
 void onequiz1() {
